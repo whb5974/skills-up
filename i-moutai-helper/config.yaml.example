@@ -1,0 +1,73 @@
+# i 茅台申购辅助工具 - 配置文件示例
+# 复制为 config.yaml 后修改使用
+
+# ==================== 用户配置 ====================
+user:
+  phone: "13800138000"          # 手机号
+  name: "张三"                  # 姓名
+  location:
+    city: "北京市"              # 城市
+    district: "朝阳区"          # 区县
+    latitude: 39.9042           # 纬度
+    longitude: 116.4074         # 经度
+
+# ==================== 提醒配置 ====================
+reminder:
+  enabled: true                 # 是否启用提醒
+  purchase_start: "08:55"       # 申购开始提醒时间
+  purchase_end: "20:30"         # 申购截止提醒时间
+  result_notify: "22:00"        # 结果通知提醒时间
+  timezone: "Asia/Shanghai"     # 时区
+
+# ==================== 门店配置 ====================
+store:
+  max_distance: 10.0            # 最大查询距离 (公里)
+  amap_api_key: ""              # 高德地图 API Key (可选)
+  competition_threshold:
+    low: 0.2                    # 中签率>20% 为低竞争
+    medium: 0.1                 # 中签率 10-20% 为中竞争
+    high: 0.0                   # 中签率<10% 为高竞争
+
+# ==================== 推送配置 ====================
+notification:
+  feishu:
+    enabled: true               # 是否启用飞书推送
+    chat_id: "oc_xxxxxxxxxxxxx" # 飞书群聊 ID
+    app_id: "cli_xxxxxxxxxxxxx" # 飞书 APP ID
+    app_secret: "xxxxxxxxxxxxx" # 飞书 APP Secret
+  
+  wechat:
+    enabled: false              # 是否启用微信推送
+    key: ""                     # Server 酱 key
+  
+  sms:
+    enabled: false              # 是否启用短信推送
+    provider: "aliyun"          # 短信服务商
+    access_key: ""              # Access Key
+    secret_key: ""              # Secret Key
+
+# ==================== 产品配置 ====================
+products:
+  - name: "53%vol 500ml 贵州茅台酒 (飞天)"
+    price: 1499
+    enabled: true
+  - name: "53%vol 375ml×2 贵州茅台酒 (飞天)"
+    price: 2999
+    enabled: true
+  - name: "53%vol 500ml 茅台 1935"
+    price: 1188
+    enabled: true
+  - name: "53%vol 500ml 珍品茅台酒"
+    price: 3999
+    enabled: false
+
+# ==================== 数据库配置 ====================
+database:
+  path: "data/moutai.db"        # 数据库文件路径
+
+# ==================== 日志配置 ====================
+logging:
+  level: "INFO"                 # 日志级别 (DEBUG/INFO/WARNING/ERROR)
+  path: "data/logs/"            # 日志目录
+  max_size: "10MB"              # 单个日志文件最大大小
+  backup_count: 5               # 保留日志文件数量

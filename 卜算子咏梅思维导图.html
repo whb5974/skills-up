@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《卜算子·咏梅》对比分析思维导图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .mindmap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .center-node {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            position: relative;
+        }
+        .center-node::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 3px dashed rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+        .branches {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .branch {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 20px;
+        }
+        .branch-header {
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .branch-mao {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        .branch-lu {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        .branch-common {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+        }
+        .branch-item {
+            background: #f8f9fa;
+            border-left: 4px solid;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.3s;
+        }
+        .branch-item:hover {
+            transform: translateX(10px);
+        }
+        .branch-mao .branch-item {
+            border-color: #e74c3c;
+            background: #fff5f5;
+        }
+        .branch-lu .branch-item {
+            border-color: #3498db;
+            background: #f0f7ff;
+        }
+        .branch-common .branch-item {
+            border-color: #9b59b6;
+            background: #f5f0ff;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .item-desc {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .comparison-section {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .comparison-title {
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .comparison-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .comparison-card.mao {
+            border-top: 5px solid #e74c3c;
+        }
+        .comparison-card.lu {
+            border-top: 5px solid #3498db;
+        }
+        .comparison-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .comparison-card ul {
+            list-style: none;
+        }
+        .comparison-card li {
+            padding: 8px 0;
+            color: #555;
+            border-bottom: 1px dashed #eee;
+        }
+        .comparison-card li:last-child {
+            border-bottom: none;
+        }
+        .poem-box {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'KaiTi', '楷体', serif;
+            font-size: 16px;
+            line-height: 2;
+            text-align: center;
+            border: 2px solid #eee;
+        }
+        .poem-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, #fff5e7 0%, #ffeaa7 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .summary-box h3 {
+            color: #d35400;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .summary-box p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .emoji {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸《卜算子·咏梅》对比分析</h1>
+        <p class="subtitle">毛泽东 vs 陆游 · 思维导图</p>
+
+        <div class="mindmap">
+            <!-- Center Node -->
+            <div class="center-node">
+                <span>咏梅</span>
+                <span style="font-size: 16px; margin-top: 5px;">对比分析</span>
+            </div>
+
+            <!-- Branches -->
+            <div class="branches">
+                <!-- 毛泽东 -->
+                <div class="branch">
+                    <div class="branch-header branch-mao">
+                        <span class="emoji">🔴</span>毛泽东
+                        <div style="font-size: 14px; font-weight: normal; margin-top: 5px;">1961 年冬</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🌟 情感基调</div>
+                        <div class="item-desc">乐观豪迈 · 革命乐观主义</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">💐 梅花形象</div>
+                        <div class="item-desc">"花枝俏"——自信美丽</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">😊 结尾意境</div>
+                        <div class="item-desc">"她在丛中笑"——与民同乐</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🎯 精神内核</div>
+                        <div class="item-desc">集体主义 · 鼓舞斗志</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">📜 时代背景</div>
+                        <div class="item-desc">新中国困难时期</div>
+                    </div>
+                </div>
+
+                <!-- 相同点 -->
+                <div class="branch">
+                    <div class="branch-header branch-common">
+                        <span class="emoji">🟣</span>相同点
+                        <div style="font-size: 14px; font-weight: normal; margin-top: 5px;">共同特征</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">📝 词牌相同</div>
+                        <div class="item-desc">《卜算子》双调四十四字</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🌸 咏物主题</div>
+                        <div class="item-desc">都以梅花为歌咏对象</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">✍️ 托物言志</div>
+                        <div class="item-desc">借梅抒怀，表达志向</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🏆 不争春</div>
+                        <div class="item-desc">不与百花争艳的高洁</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">❄️ 傲霜雪</div>
+                        <div class="item-desc">恶劣环境中绽放</div>
+                    </div>
+                </div>
+
+                <!-- 陆游 -->
+                <div class="branch">
+                    <div class="branch-header branch-lu">
+                        <span class="emoji">🔵</span>陆游
+                        <div style="font-size: 14px; font-weight: normal; margin-top: 5px;">南宋</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">😔 情感基调</div>
+                        <div class="item-desc">孤寂悲凉 · 怀才不遇</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🥀 梅花形象</div>
+                        <div class="item-desc">"寂寞开无主"——孤独</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🌙 结尾意境</div>
+                        <div class="item-desc">"只有香如故"——坚守</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">🎯 精神内核</div>
+                        <div class="item-desc">个人节操 · 高洁士人</div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="item-title">📜 时代背景</div>
+                        <div class="item-desc">抗金失败 · 报国无门</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 诗词原文 -->
+        <div class="comparison-section">
+            <h2 class="comparison-title">📖 诗词原文对比</h2>
+            <div class="comparison-grid">
+                <div class="comparison-card mao">
+                    <h3>🔴 毛泽东《卜算子·咏梅》</h3>
+                    <div class="poem-box">
+                        <div class="poem-title">风雨送春归，飞雪迎春到。</div>
+                        <div class="poem-title">已是悬崖百丈冰，犹有花枝俏。</div>
+                        <br>
+                        <div class="poem-title">俏也不争春，只把春来报。</div>
+                        <div class="poem-title">待到山花烂漫时，<span class="highlight">她在丛中笑</span>。</div>
+                    </div>
+                </div>
+                <div class="comparison-card lu">
+                    <h3>🔵 陆游《卜算子·咏梅》</h3>
+                    <div class="poem-box">
+                        <div class="poem-title">驿外断桥边，寂寞开无主。</div>
+                        <div class="poem-title">已是黄昏独自愁，更著风和雨。</div>
+                        <br>
+                        <div class="poem-title">无意苦争春，一任群芳妒。</div>
+                        <div class="poem-title">零落成泥碾作尘，<span class="highlight">只有香如故</span>。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心对比总结 -->
+        <div class="summary-box">
+            <h3>💡 核心对比总结</h3>
+            <p>
+                <strong>毛泽东</strong>：革命乐观 · 集体主义 · 积极向上 → 困难时期的精神鼓舞<br><br>
+                <strong>陆  游</strong>：孤寂悲凉 · 个人节操 · 坚守本心 → 报国无门的无奈抒发<br><br>
+                <span class="emoji">📚</span><strong>学习要点</strong>：知人论世 · 同一意象不同情感 · 对比阅读深化理解
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[Unit]
+Description=i 茅台申购辅助工具
+After=network.target
+
+[Service]
+Type=simple
+User=ghost
+WorkingDirectory=/home/ghost/.openclaw/workspace/i-moutai-helper
+ExecStart=/usr/bin/python3 main.py start
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/ghost/.openclaw/workspace/i-moutai-helper/data/logs/service.log
+StandardError=append:/home/ghost/.openclaw/workspace/i-moutai-helper/data/logs/service.log
+
+[Install]
+WantedBy=multi-user.target

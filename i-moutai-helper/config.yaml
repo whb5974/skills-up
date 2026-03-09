@@ -1,0 +1,80 @@
+# i 茅台申购辅助工具 - 配置文件
+
+# ==================== 用户配置 ====================
+user:
+  phone: "15535186887"          # 手机号
+  name: "用户"                  # 姓名
+  location:
+    city: "北京市"              # 城市
+    district: "朝阳区"          # 区县
+    latitude: 39.9042           # 纬度
+    longitude: 116.4074         # 经度
+
+# ==================== 提醒配置 ====================
+reminder:
+  enabled: true                 # 是否启用提醒
+  # i 购抢购制 - 多次倒计时提醒
+  purchase_start: "08:50"       # 第一次提醒 (提前 10 分钟)
+  purchase_prepare: "08:55"     # 第二次提醒 (提前 5 分钟)
+  purchase_final: "08:59"       # 第三次提醒 (提前 1 分钟)
+  purchase_time: "09:00"        # 抢购时间
+  result_notify: "22:00"        # 结果通知提醒时间
+  timezone: "Asia/Shanghai"     # 时区
+  
+  # 执行周期
+  start_date: "2026-03-10"      # 下周一开始执行
+  active_days: "all"            # 每天执行
+  multiple_sessions: true       # 多场次抢购 (09:00/12:00/14:00/20:00)
+
+# ==================== 门店配置 ====================
+store:
+  max_distance: 10.0            # 最大查询距离 (公里)
+  amap_api_key: ""              # 高德地图 API Key (可选)
+  competition_threshold:
+    low: 0.2                    # 中签率>20% 为低竞争
+    medium: 0.1                 # 中签率 10-20% 为中竞争
+    high: 0.0                   # 中签率<10% 为高竞争
+
+# ==================== 推送配置 ====================
+notification:
+  feishu:
+    enabled: true               # 是否启用飞书推送
+    chat_id: "oc_61223fa3823a1a7373a10b6974358342"
+    app_id: "cli_a92910c88bf89bb3"
+    app_secret: "O6WuZwPyHpkZbFW4fZkk8cMsQg4RwzfN"
+  
+  wechat:
+    enabled: false
+    key: ""
+  
+  sms:
+    enabled: false
+    provider: "aliyun"
+    access_key: ""
+    secret_key: ""
+
+# ==================== 产品配置 ====================
+products:
+  - name: "53%vol 500ml 贵州茅台酒 (飞天)"
+    price: 1499
+    enabled: true
+  - name: "53%vol 375ml×2 贵州茅台酒 (飞天)"
+    price: 2999
+    enabled: true
+  - name: "53%vol 500ml 茅台 1935"
+    price: 1188
+    enabled: true
+  - name: "53%vol 500ml 珍品茅台酒"
+    price: 3999
+    enabled: false
+
+# ==================== 数据库配置 ====================
+database:
+  path: "data/moutai.db"
+
+# ==================== 日志配置 ====================
+logging:
+  level: "INFO"
+  path: "data/logs/"
+  max_size: "10MB"
+  backup_count: 5

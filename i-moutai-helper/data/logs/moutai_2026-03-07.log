@@ -1,0 +1,62 @@
+2026-03-07 16:38:28.334 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:38:28.335 | WARNING  | src.store.finder:find_nearby:45 - ⚠️ 未配置高德 API Key，返回示例数据
+2026-03-07 16:38:28.679 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:38:34.483 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-07 16:38:34.484 | INFO     | src.reminder.notifier:send_purchase_start_reminder:125 - 📤 已发送申购开始提醒
+2026-03-07 16:38:34.485 | INFO     | __main__:cmd_remind:105 - ✅ 已发送 purchase_start 提醒
+2026-03-07 16:38:38.713 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:25.448 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:47.512 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:47.860 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:52.833 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:52.834 | INFO     | __main__:cmd_start:43 - 🚀 启动 i 茅台申购辅助工具...
+2026-03-07 16:39:52.866 | INFO     | src.reminder.scheduler:_setup_jobs:43 - ⏰ 已设置申购开始提醒：08:55
+2026-03-07 16:39:52.867 | INFO     | src.reminder.scheduler:_setup_jobs:55 - ⏰ 已设置申购截止提醒：20:30
+2026-03-07 16:39:52.867 | INFO     | src.reminder.scheduler:_setup_jobs:67 - ⏰ 已设置结果公布提醒：22:00
+2026-03-07 16:39:52.867 | INFO     | src.reminder.scheduler:start:98 - 🚀 启动定时任务调度器...
+2026-03-07 16:39:55.870 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:39:55.871 | INFO     | src.stats.tracker:export_to_csv:157 - ✅ 已导出 7 条记录到 data/export_test.csv
+2026-03-07 16:39:55.871 | INFO     | __main__:cmd_export:116 - ✅ 数据已导出到 data/export_test.csv
+2026-03-07 16:42:49.681 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:42:49.684 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 1 个账号
+2026-03-07 16:42:50.037 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:42:50.039 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 1 个账号
+2026-03-07 16:42:50.044 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 2 个账号
+2026-03-07 16:42:50.045 | INFO     | src.multi_account.manager:add_account:79 - ✅ 添加账号：李四 (13900139000) - 配偶
+2026-03-07 16:42:50.376 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:42:50.378 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 2 个账号
+2026-03-07 16:42:50.381 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 3 个账号
+2026-03-07 16:42:50.381 | INFO     | src.multi_account.manager:add_account:79 - ✅ 添加账号：王五 (13800138001) - 父亲
+2026-03-07 16:42:50.728 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:42:50.729 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 3 个账号
+2026-03-07 16:43:32.043 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:43:32.045 | INFO     | src.multi_account.manager:load_accounts:39 - ✅ 加载 3 个账号
+2026-03-07 16:49:29.395 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:49:29.395 | INFO     | __main__:cmd_start:43 - 🚀 启动 i 茅台申购辅助工具...
+2026-03-07 16:49:29.397 | INFO     | src.reminder.scheduler:_setup_jobs:43 - ⏰ 已设置申购开始提醒：08:55
+2026-03-07 16:49:29.397 | INFO     | src.reminder.scheduler:_setup_jobs:55 - ⏰ 已设置申购截止提醒：10:30
+2026-03-07 16:49:29.397 | INFO     | src.reminder.scheduler:_setup_jobs:67 - ⏰ 已设置结果公布提醒：22:00
+2026-03-07 16:49:29.397 | INFO     | src.reminder.scheduler:start:98 - 🚀 启动定时任务调度器...
+2026-03-07 16:49:35.428 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 16:49:36.212 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-07 16:49:36.214 | INFO     | src.reminder.notifier:send_purchase_start_reminder:125 - 📤 已发送申购开始提醒
+2026-03-07 16:49:36.214 | INFO     | __main__:cmd_remind:106 - ✅ 已发送 purchase_start 提醒
+2026-03-07 16:52:49.901 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 17:35:40.979 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 17:35:40.979 | INFO     | __main__:cmd_start:43 - 🚀 启动 i 茅台申购辅助工具...
+2026-03-07 17:35:40.981 | INFO     | src.reminder.scheduler:_setup_jobs:43 - ⏰ 已设置申购开始提醒：08:55
+2026-03-07 17:35:40.981 | INFO     | src.reminder.scheduler:_setup_jobs:55 - ⏰ 已设置申购截止提醒：20:30
+2026-03-07 17:35:40.982 | INFO     | src.reminder.scheduler:_setup_jobs:67 - ⏰ 已设置结果公布提醒：22:00
+2026-03-07 17:35:40.982 | INFO     | src.reminder.scheduler:start:98 - 🚀 启动定时任务调度器...
+2026-03-07 17:39:22.510 | INFO     | src.utils.database:init_tables:106 - ✅ 数据库表初始化完成
+2026-03-07 17:39:22.511 | INFO     | __main__:cmd_start:43 - 🚀 启动 i 茅台申购辅助工具...
+2026-03-07 17:39:22.513 | INFO     | src.reminder.scheduler:_setup_jobs:43 - ⏰ 已设置申购开始提醒：08:50
+2026-03-07 17:39:22.513 | INFO     | src.reminder.scheduler:_setup_jobs:55 - ⏰ 已设置申购截止提醒：20:30
+2026-03-07 17:39:22.513 | INFO     | src.reminder.scheduler:_setup_jobs:67 - ⏰ 已设置结果公布提醒：22:00
+2026-03-07 17:39:22.513 | INFO     | src.reminder.scheduler:start:98 - 🚀 启动定时任务调度器...
+2026-03-07 20:30:00.001 | INFO     | src.reminder.scheduler:_purchase_end_job:80 - 🔔 执行申购截止提醒任务...
+2026-03-07 20:30:00.882 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-07 20:30:00.883 | INFO     | src.reminder.notifier:send_purchase_end_reminder:145 - 📤 已发送申购截止提醒
+2026-03-07 22:00:00.000 | INFO     | src.reminder.scheduler:_result_job:89 - 🔔 执行结果公布提醒任务...
+2026-03-07 22:00:00.848 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-07 22:00:00.849 | INFO     | src.reminder.notifier:send_result_reminder:165 - 📤 已发送结果公布提醒

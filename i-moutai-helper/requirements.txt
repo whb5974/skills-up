@@ -1,0 +1,23 @@
+# i 茅台申购辅助工具 - 依赖列表
+
+# 核心依赖
+requests>=2.28.0
+PyYAML>=6.0
+APScheduler>=3.10.0
+
+# 日志
+loguru>=0.7.0
+
+# 工具库
+tenacity>=8.2.0  # 重试机制
+
+# 数据可视化 (可选)
+# matplotlib>=3.7.0
+# plotly>=5.14.0
+
+# 测试 (可选)
+# pytest>=7.3.0
+# pytest-cov>=4.1.0
+
+# 打包 (可选)
+# pyinstaller>=5.0.0

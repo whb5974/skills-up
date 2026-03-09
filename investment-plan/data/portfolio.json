@@ -1,0 +1,54 @@
+{
+  "cash": 550.0,
+  "cash_allocation": {
+    "cash_money_market": 15000,
+    "alternative": 5000
+  },
+  "positions": {
+    "600519": {
+      "name": "贵州茅台",
+      "shares": 20,
+      "cost_basis": 1800.0,
+      "current_price": 1800.0,
+      "category": "股票 - 蓝筹"
+    },
+    "600036": {
+      "name": "招商银行",
+      "shares": 100,
+      "cost_basis": 35.0,
+      "current_price": 35.0,
+      "category": "股票 - 蓝筹"
+    },
+    "510300": {
+      "name": "沪深 300ETF",
+      "shares": 3000,
+      "cost_basis": 3.8,
+      "current_price": 3.8,
+      "category": "基金 - 宽基"
+    },
+    "510500": {
+      "name": "中证 500ETF",
+      "shares": 2000,
+      "cost_basis": 5.5,
+      "current_price": 5.5,
+      "category": "基金 - 宽基"
+    },
+    "512660": {
+      "name": "军工 ETF",
+      "shares": 300,
+      "cost_basis": 8.5,
+      "current_price": 8.5,
+      "category": "基金 - 行业"
+    },
+    "511260": {
+      "name": "国债 ETF",
+      "shares": 150,
+      "cost_basis": 100.0,
+      "current_price": 100.0,
+      "category": "债券"
+    }
+  },
+  "start_date": "2026-02-26",
+  "initial_capital": 100000,
+  "total_invested": 99450.0
+}

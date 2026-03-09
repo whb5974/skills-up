@@ -1,0 +1,27 @@
+# Qbot 量化交易 - 依赖列表
+
+# 核心依赖
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 可视化
+matplotlib>=3.7.0
+
+# 日志
+loguru>=0.7.0
+
+# 技术指标 (可选)
+# ta-lib>=0.4.0
+# pandas-ta>=0.3.0
+
+# 回测框架 (可选)
+# backtrader>=1.9.0
+
+# 数据获取 (可选)
+# tushare>=1.2.0
+# akshare>=1.0.0
+
+# 机器学习 (可选，第 5 周)
+# scikit-learn>=1.0.0
+# tensorflow>=2.0.0
+# torch>=2.0.0

@@ -1,0 +1,111 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-03-01 17:49 CST
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000091s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+631/tcp   open  ipp           CUPS 2.4
+3389/tcp  open  ms-wbt-server xrdp
+3456/tcp  open  vat?
+18789/tcp open  unknown
+18791/tcp open  http          Node.js Express framework
+18792/tcp open  unknown
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3456-TCP:V=7.94SVN%I=7%D=3/1%Time=69A40BB9%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,A4B,"HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:\
+SF:x20\*\r\nAccess-Control-Allow-Methods:\x20GET,\x20POST,\x20OPTIONS\r\nA
+SF:ccess-Control-Allow-Headers:\x20Content-Type\r\nContent-Type:\x20text/h
+SF:tml;\x20charset=utf-8\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x2009:49:45
+SF:\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lan
+SF:g=\"zh-CN\">\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"UTF-8\">\n\x20
+SF:\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=device-width,
+SF:\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<title>PDF\x20\xe4\xb8\x8b\x
+SF:e8\xbd\xbd\xe4\xb8\xad\xe5\xbf\x83</title>\n\x20\x20\x20\x20<style>\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20body\x20{\x20font-family:\x20Arial,\x20sa
+SF:ns-serif;\x20max-width:\x20800px;\x20margin:\x2050px\x20auto;\x20paddin
+SF:g:\x2020px;\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\x20color:\x20
+SF:#333;\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\.file-list\x20{\x20list-st
+SF:yle:\x20none;\x20padding:\x200;\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:.file-item\x20{\x20background:\x20#f5f5f5;\x20margin:\x2010px\x200;\x20
+SF:padding:\x2015px;\x20border-radius:\x205px;\x20display:\x20flex;\x20jus
+SF:tify-content:\x20space-between;\x20align-items:\x20center;\x20}\n\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\.file-name\x20{\x20font-weight:\x20bold;\x20
+SF:color:\x20#2196F3;\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\.file-size\x2
+SF:0{\x20color:\x20#666;\x20font-size:\x2014px;\x20}\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\.d")%r(HTTPOptions,C9,"HTTP/1\.1\x20200\x20OK\r\nAccess-Co
+SF:ntrol-Allow-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,\x20P
+SF:OST,\x20OPTIONS\r\nAccess-Control-Allow-Headers:\x20Content-Type\r\nDat
+SF:e:\x20Sun,\x2001\x20Mar\x202026\x2009:49:45\x20GMT\r\nConnection:\x20cl
+SF:ose\r\n\r\n")%r(RTSPRequest,C9,"HTTP/1\.1\x20200\x20OK\r\nAccess-Contro
+SF:l-Allow-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,\x20POST,
+SF:\x20OPTIONS\r\nAccess-Control-Allow-Headers:\x20Content-Type\r\nDate:\x
+SF:20Sun,\x2001\x20Mar\x202026\x2009:49:45\x20GMT\r\nConnection:\x20close\
+SF:r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnecti
+SF:on:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port18789-TCP:V=7.94SVN%I=7%D=3/1%Time=69A40BB9%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,47F,"HTTP/1\.1\x20200\x20OK\r\nX-Content-Type-Options:\x20n
+SF:osniff\r\nReferrer-Policy:\x20no-referrer\r\nX-Frame-Options:\x20DENY\r
+SF:\nContent-Security-Policy:\x20default-src\x20'self';\x20base-uri\x20'no
+SF:ne';\x20object-src\x20'none';\x20frame-ancestors\x20'none';\x20script-s
+SF:rc\x20'self';\x20style-src\x20'self'\x20'unsafe-inline';\x20img-src\x20
+SF:'self'\x20data:\x20https:;\x20font-src\x20'self';\x20connect-src\x20'se
+SF:lf'\x20ws:\x20wss:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nC
+SF:ache-Control:\x20no-cache\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x2009:4
+SF:9:45\x20GMT\r\nConnection:\x20close\r\n\r\n<!doctype\x20html>\n<html\x2
+SF:0lang=\"en\">\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"UTF-8
+SF:\"\x20/>\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width
+SF:=device-width,\x20initial-scale=1\.0\"\x20/>\n\x20\x20\x20\x20<title>Op
+SF:enClaw\x20Control</title>\n\x20\x20\x20\x20<meta\x20name=\"color-scheme
+SF:\"\x20content=\"dark\x20light\"\x20/>\n\x20\x20\x20\x20<link\x20rel=\"i
+SF:con\"\x20type=\"image/svg\+xml\"\x20href=\"\./favicon\.svg\"\x20/>\n\x2
+SF:0\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image/png\"\x20sizes=\"32x
+SF:32\"\x20href=\"\./favicon-32\.png\"\x20/>\n\x20\x20\x20\x20<link\x20rel
+SF:=\"apple-touch-icon\"\x20sizes=\"180x180\"\x20href=\"\./a")%r(HTTPOptio
+SF:ns,D5,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nX-Content-Type-O
+SF:ptions:\x20nosniff\r\nReferrer-Policy:\x20no-referrer\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x
+SF:2009:49:45\x20GMT\r\nConnection:\x20close\r\n\r\nMethod\x20Not\x20Allow
+SF:ed")%r(RTSPRequest,D5,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\n
+SF:X-Content-Type-Options:\x20nosniff\r\nReferrer-Policy:\x20no-referrer\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Sun,\x2001\
+SF:x20Mar\x202026\x2009:49:45\x20GMT\r\nConnection:\x20close\r\n\r\nMethod
+SF:\x20Not\x20Allowed")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nConnection:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port18792-TCP:V=7.94SVN%I=7%D=3/1%Time=69A40BB9%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,76,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\
+SF:x20charset=utf-8\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x2009:49:45\x20G
+SF:MT\r\nConnection:\x20close\r\n\r\nOK")%r(HTTPOptions,13B,"HTTP/1\.1\x20
+SF:204\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Co
+SF:ntrol-Allow-Methods:\x20GET,\x20PUT,\x20POST,\x20OPTIONS\r\nAccess-Cont
+SF:rol-Allow-Headers:\x20content-type,\x20x-openclaw-relay-token\r\nAccess
+SF:-Control-Max-Age:\x2086400\r\nVary:\x20Origin,\x20Access-Control-Reques
+SF:t-Headers\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x2009:49:45\x20GMT\r\nC
+SF:onnection:\x20close\r\n\r\n")%r(RTSPRequest,13B,"HTTP/1\.1\x20204\x20No
+SF:\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-All
+SF:ow-Methods:\x20GET,\x20PUT,\x20POST,\x20OPTIONS\r\nAccess-Control-Allow
+SF:-Headers:\x20content-type,\x20x-openclaw-relay-token\r\nAccess-Control-
+SF:Max-Age:\x2086400\r\nVary:\x20Origin,\x20Access-Control-Request-Headers
+SF:\r\nDate:\x20Sun,\x2001\x20Mar\x202026\x2009:49:45\x20GMT\r\nConnection
+SF::\x20close\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nConnection:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusR
+SF:equestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection
+SF::\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nConnection:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSe
+SF:ssionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n")%r(Kerberos,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(SMBProgNeg,2F,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nConnection:\x20close\r\n\r\n")%r(X11Probe,2F,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(FourOhFourRequest
+SF:,5B,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Sun,\x2001\x20Mar\x20
+SF:2026\x2009:49:45\x20GMT\r\nConnection:\x20close\r\n\r\nnot\x20found");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.79 seconds

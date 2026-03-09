@@ -1,0 +1,9 @@
+2026-03-08 08:50:00.000 | INFO     | src.reminder.scheduler:_purchase_start_job:71 - 🔔 执行申购开始提醒任务...
+2026-03-08 08:50:00.832 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-08 08:50:00.834 | INFO     | src.reminder.notifier:send_purchase_start_reminder:125 - 📤 已发送申购开始提醒
+2026-03-08 20:30:00.000 | INFO     | src.reminder.scheduler:_purchase_end_job:80 - 🔔 执行申购截止提醒任务...
+2026-03-08 20:30:00.865 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-08 20:30:00.867 | INFO     | src.reminder.notifier:send_purchase_end_reminder:145 - 📤 已发送申购截止提醒
+2026-03-08 22:00:00.001 | INFO     | src.reminder.scheduler:_result_job:89 - 🔔 执行结果公布提醒任务...
+2026-03-08 22:00:00.890 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-08 22:00:00.892 | INFO     | src.reminder.notifier:send_result_reminder:165 - 📤 已发送结果公布提醒
