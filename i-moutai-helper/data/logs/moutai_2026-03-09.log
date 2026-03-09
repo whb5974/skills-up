@@ -1,0 +1,3 @@
+2026-03-09 08:50:00.000 | INFO     | src.reminder.scheduler:_purchase_start_job:71 - 🔔 执行申购开始提醒任务...
+2026-03-09 08:50:06.705 | INFO     | src.reminder.notifier:send_message:97 - ✅ 飞书消息发送成功
+2026-03-09 08:50:06.706 | INFO     | src.reminder.notifier:send_purchase_start_reminder:125 - 📤 已发送申购开始提醒
