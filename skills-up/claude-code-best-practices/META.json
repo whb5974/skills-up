@@ -1,0 +1,98 @@
+{
+  "name": "claude-code-best-practices",
+  "version": "1.0.0",
+  "description": "Claude Code 最佳实践技能包 - 包含项目状态、代码审查、测试生成等核心技能",
+  "author": "墨灵 (MoLing)",
+  "license": "MIT",
+  "homepage": "https://github.com/whb5974/skills-up/tree/main/claude-code-best-practices",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whb5974/skills-up.git"
+  },
+  "keywords": [
+    "claude-code",
+    "openclaw",
+    "skills",
+    "code-review",
+    "testing",
+    "automation",
+    "best-practices"
+  ],
+  "categories": [
+    "development",
+    "code-quality",
+    "testing",
+    "automation"
+  ],
+  "skills": [
+    {
+      "name": "project-status",
+      "description": "查看项目状态（git、文件、提交历史）",
+      "file": "skills/project-status.md",
+      "usage": "/skill project-status"
+    },
+    {
+      "name": "code-review",
+      "description": "代码审查（语法/安全/性能/规范）",
+      "file": "skills/code-review.md",
+      "usage": "/skill code-review <文件>"
+    },
+    {
+      "name": "test-gen",
+      "description": "为函数/模块生成测试用例",
+      "file": "skills/test-gen.md",
+      "usage": "/skill test-gen <文件/函数>"
+    }
+  ],
+  "hooks": [
+    {
+      "name": "on-file-edit",
+      "description": "文件编辑后自动语法检查",
+      "file": "hooks/on-file-edit.sh",
+      "trigger": "file.edit"
+    },
+    {
+      "name": "on-task-complete",
+      "description": "任务完成后显示变更摘要",
+      "file": "hooks/on-task-complete.sh",
+      "trigger": "task.complete"
+    }
+  ],
+  "requirements": {
+    "openclaw": ">=1.0.0",
+    "bash": ">=4.0",
+    "nodejs": ">=14.0 (可选，用于 JS 语法检查)",
+    "python": ">=3.6 (可选，用于 Python 语法检查)"
+  },
+  "install": {
+    "steps": [
+      "git clone https://github.com/whb5974/skills-up.git",
+      "cd skills-up/claude-code-best-practices",
+      "cp -r skills ~/.openclaw/workspace/.claude/",
+      "cp -r hooks ~/.openclaw/workspace/.claude/",
+      "cp settings.json ~/.openclaw/workspace/.claude/",
+      "cp CLAUDE.md ~/.openclaw/workspace/",
+      "chmod +x ~/.openclaw/workspace/.claude/hooks/*.sh"
+    ]
+  },
+  "stats": {
+    "skills": 3,
+    "hooks": 2,
+    "docs": 4,
+    "examples": 5,
+    "linesOfCode": 1500,
+    "testsPassed": 22
+  },
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-03-10",
+      "changes": [
+        "初始发布",
+        "3 个核心 skills",
+        "2 个自动化 hooks",
+        "完整文档",
+        "实战验证（坦克大战项目）"
+      ]
+    }
+  }
+}

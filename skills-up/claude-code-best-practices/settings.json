@@ -1,0 +1,56 @@
+{
+  "permissions": {
+    "fs": {
+      "read": ["**/*"],
+      "write": ["**/*"],
+      "deny": ["**/.env*", "**/*.key", "**/secrets/**"]
+    },
+    "exec": {
+      "allow": [
+        "git *",
+        "npm *",
+        "yarn *",
+        "pnpm *",
+        "pip *",
+        "python*",
+        "node *",
+        "npx *",
+        "ls *",
+        "cat *",
+        "grep *",
+        "find *",
+        "head *",
+        "tail *",
+        "wc *",
+        "diff *",
+        "trash *",
+        "mkdir *",
+        "cp *",
+        "mv *"
+      ],
+      "deny": [
+        "rm -rf *",
+        "sudo *",
+        "curl * | sh",
+        "wget * | sh"
+      ]
+    },
+    "net": {
+      "outbound": ["api.*", "*.github.com", "registry.npmjs.org", "pypi.org"]
+    }
+  },
+  "model": {
+    "max_tokens": 8192,
+    "temperature": 0.3
+  },
+  "ui": {
+    "theme": "dark",
+    "showTokenCount": true,
+    "showCost": true
+  },
+  "features": {
+    "autoMemory": true,
+    "checkpointing": true,
+    "sandbox": false
+  }
+}

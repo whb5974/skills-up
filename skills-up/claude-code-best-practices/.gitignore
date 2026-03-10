@@ -1,0 +1,45 @@
+# 忽略文件
+
+# 日志
+*.log
+logs/
+
+# 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# 虚拟环境
+venv/
+env/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 测试输出
+coverage/
+*.cover
+*.lcov
+
+# 构建输出
+dist/
+build/
+*.egg-info/
